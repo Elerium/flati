@@ -1,0 +1,28 @@
+{
+  "name": "flati",
+  "version": "0.0.0",
+  "authors": [
+    "Ixcon"
+  ],
+  "description": "Deterministic unique flat color generator",
+  "main": "dist/flati.js",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "deterministic",
+    "unique",
+    "flat",
+    "color",
+    "generator"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
