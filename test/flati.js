@@ -11,6 +11,10 @@ describe('#flati', function() {
 		isColor(flati('foo', 42));
 	});
 
+	it('should ignore second parameter', function() {
+		isColor(flati('foobar'));
+	});
+
 	it('should generate different colors with different seed', function() {
 		var generator1 = flati.bind(null, 'foo');
 		var generator2 = flati.bind(null, 'bar');

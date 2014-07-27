@@ -14,25 +14,29 @@ npm install flati --save
 bower install flati --save
 ```
 
-* Package can be loaded with AMD, Node.js or globally through `window.flati`.
+* Package can be loaded with AMD, Node.js or globally with `window.flati`.
 
 ## Api
 
-`flati(seed: String|Number, i: Number)`
+`flati(seed: String|Number, i: Optional Number)`
 
 ## Usage:
 
+* In case we want generate unique color for each user.
+
 ```javascript
-var seed = 'foo';
-var generator = flati.bind(null, seed);
+var users = [
+    {id: 'john'},
+    {id: 'jane'},
+    {id: 'jenny'}
+];
 
-var color1 = generator(0);
-var color2 = generator(1);
-
-// or just
-flati('bar', 0);
+users.forEach(function(user) {
+    // use user id as seed
+    var color1 = flati(user.id); // equal to flati(user.id, 0);
+    var color2 = flati(user.id, 1);
+});
 ```
 
 * It's guaranteed that two similar color will not be generated consecutive.
 * With the same seed, you always gets the same results.
-* Seed can be e.g. user id, if you want generate different color for every user.
