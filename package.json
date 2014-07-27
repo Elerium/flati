@@ -1,6 +1,6 @@
 {
   "name": "flati",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Deterministic generator of unique flat colors",
   "main": "dist/flati.js",
   "scripts": {

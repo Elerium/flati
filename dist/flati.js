@@ -33,6 +33,7 @@
 	};
 
 	return function(seed, i) {
+		i = i || 0;
 		var goldenRatio = (1 + Math.sqrt(5)) / 2;
 		var hue = ((hash(seed.toString()) + (i * goldenRatio)) % 1) * 360;
 		return hsl2rgb(hue, 0.5, 0.6);
