@@ -22,7 +22,7 @@ bower install flati --save
 
 ## Usage:
 
-* In case we want generate unique color for each user.
+For example if we want generate unique color for each user.
 
 ```javascript
 var users = [
