@@ -1,18 +1,22 @@
 {
   "name": "flati",
-  "version": "0.0.0",
-  "description": "Deterministic unique flat color generator",
+  "version": "0.0.1",
+  "description": "Deterministic generator of unique flat colors",
   "main": "dist/flati.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test --reporter spec"
   },
   "devDependencies": {
     "gulp": "~3.8.0",
     "gulp-jshint": "~1.6.0",
+    "gulp-mocha": "^0.5.2",
     "gulp-rename": "^1.2.0",
     "gulp-rimraf": "~0.1.0",
     "gulp-uglify": "~0.3.0",
-    "jshint-stylish": "~0.2.0"
+    "jshint-stylish": "~0.2.0",
+    "mocha": "^1.21.1",
+    "requirejs": "^2.1.14",
+    "should": "^4.0.4"
   },
   "repository": {
     "type": "git",
@@ -23,6 +27,7 @@
     "unique",
     "flat",
     "color",
+    "colors",
     "generator"
   ],
   "author": "Ixcon",
