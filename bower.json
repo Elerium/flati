@@ -21,10 +21,11 @@
   ],
   "license": "MIT",
   "ignore": [
-    "**/.*",
+    "bower.json",
+    "package.json",
+    "gulpfile.js",
+    "README.md",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ]
 }
