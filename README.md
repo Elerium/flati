@@ -1,25 +1,26 @@
 # flati
 
-Deterministic unique flat color generator for JavaScript
+Deterministic generator of unique flat colors
 
 ## Installation
 
-npm:
+### npm:
 ```sh
 npm install flati --save
 ```
 
-bower:
+### bower:
 ```sh
 bower install flati --save
 ```
 
+* Package can be loaded with AMD, Node.js or globally through `window.flati`.
+
+## Api
+
+`flati(seed: String|Number, i: Number)`
+
 ## Usage:
-
-### Signature
-`flati(seed: String, i: Number)`
-
-### Example
 
 ```javascript
 var seed = 'foo';
@@ -32,4 +33,6 @@ var color2 = generator(1);
 flati('bar', 0);
 ```
 
-This package can be load through AMD, CommonJS or globally. It's guaranteed that two similar color will not be generated consecutive. With the same seed, you always gets the same results. For example seed can be user id or user name if you want get different color for every user.
+* It's guaranteed that two similar color will not be generated consecutive.
+* With the same seed, you always gets the same results.
+* Seed can be e.g. user id, if you want generate different color for every user.
