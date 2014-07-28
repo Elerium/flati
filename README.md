@@ -1,3 +1,5 @@
+![flati](http://i62.tinypic.com/2aajbdj.jpg)
+
 # flati
 
 Deterministic generator of unique flat colors
