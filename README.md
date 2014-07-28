@@ -38,5 +38,5 @@ users.forEach(function(user) {
 });
 ```
 
-* When you increment `i` parameter, it's guaranteed that two similar color will not be generated consecutive.
+* When you increment `i` parameter, it's guaranteed that two similar colors will not be generated consecutive.
 * With the same seed, you always gets the same results.
