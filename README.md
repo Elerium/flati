@@ -27,7 +27,8 @@ bower install flati --save
 {
     r: Number,
     g: Number, 
-    b: Number
+    b: Number,
+    toString: Function // rgb(r, g, b)
 }
 ```
 
