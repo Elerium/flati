@@ -4,12 +4,12 @@ Deterministic generator of unique flat colors
 
 ## Installation
 
-### npm:
+#### npm:
 ```sh
 npm install flati --save
 ```
 
-### bower:
+#### Bower:
 ```sh
 bower install flati --save
 ```
@@ -19,6 +19,15 @@ bower install flati --save
 ## Api
 
 `flati(seed: String|Number, i: Optional Number)`
+
+##### Returns value in RGB color space:
+```javascript
+{
+    r: Number,
+    g: Number, 
+    b: Number
+}
+```
 
 ## Usage:
 
