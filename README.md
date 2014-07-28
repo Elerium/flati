@@ -14,7 +14,7 @@ npm install flati --save
 bower install flati --save
 ```
 
-* Package can be loaded with AMD, Node.js or globally with `window.flati`.
+* Package can be loaded via AMD, Node.js or globally with `window.flati`.
 
 ## Api
 
