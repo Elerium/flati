@@ -28,11 +28,15 @@
 		return {
 			r: Math.round(hue(h + 1/3) * 255),
 			g: Math.round(hue(h) * 255),
-			b: Math.round(hue(h - 1/3) * 255)
+			b: Math.round(hue(h - 1/3) * 255),
+			toString: function() {
+				return 'rgb(' + this.r + ', ' + this.g + ', ' + this.b + ')';
+			}
 		};
 	};
 
 	return function(seed, i) {
+		i = i || 0;
 		var goldenRatio = (1 + Math.sqrt(5)) / 2;
 		var hue = ((hash(seed.toString()) + (i * goldenRatio)) % 1) * 360;
 		return hsl2rgb(hue, 0.5, 0.6);

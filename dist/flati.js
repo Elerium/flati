@@ -28,7 +28,10 @@
 		return {
 			r: Math.round(hue(h + 1/3) * 255),
 			g: Math.round(hue(h) * 255),
-			b: Math.round(hue(h - 1/3) * 255)
+			b: Math.round(hue(h - 1/3) * 255),
+			toString: function() {
+				return 'rgb(' + this.r + ', ' + this.g + ', ' + this.b + ')';
+			}
 		};
 	};
 
